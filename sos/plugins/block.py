@@ -28,7 +28,8 @@ class Block(Plugin, RedHatPlugin, DebianPlugin, UbuntuPlugin):
             "lsblk",
             "blkid -c /dev/null",
             "ls -lanR /dev",
-            "ls -lanR /sys/block"
+            "ls -lanR /sys/block",
+            "blockdev --report"
         ])
 
         # legacy location for non-/run distributions
